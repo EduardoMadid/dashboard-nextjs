@@ -23,7 +23,7 @@ const {
 } = await fetchCardData();
 
   return (
-    <>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
       {/* NOTE: Uncomment this code in Chapter 9 */}
 
       <Card title="Collected" value={totalPaidInvoices} type="collected" />
@@ -34,7 +34,7 @@ const {
         value={numberOfCustomers}
         type="customers"
       />
-    </>
+    </div>
   );
 }
 
